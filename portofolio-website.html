@@ -1,68 +1,139 @@
 <!DOCTYPE html>
-<html>
-   <!--Head-->
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width" />
-       <title>Your Name Here</title>
-       <link rel="stylesheet" type="text/css" href=stylesheet/portfolio.css">
-   </head>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-   <!--Body-->
-   <body class="Background">
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
 
-      <!--Navbar-->
-      <div class="Navbar">
-          <a class="active" href="#Home">Home</a>
-          <a href="#About">About</a>
-          <a href="#GitHub">GitHub</a>
-          <a href="#Contact">Contact</a>
-      </div>
- 
-      <!--Background video-->
-      <div id="Home">
-           <video autoplay muted loop id="Typing_Video">
-               <source src="images/video/Typing.mp4" type="video/mp4">
-               <!--Display message if video fails to run-->
-               Your browser does not support HTML5 video.
-         </video>
-      </div>
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: black;
+  color: purple;
+}
 
-      <!--Video text-->
-      <div class="Video_Text">
-           <h1 class="white-text">Mehwish nayab's Portfolio</h1>
-           <strong>
-               <p class="center">
-                  <q>The computer programmer is a creator of universes for which he alome is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                             
-                         
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                       </q>
-                       <br> -Joseph Weizenbaum
-                       <br>
-                       <br> My name is Mehwish Nayab.Welcome to my portfolio website. on it, I will tell you about my background and experience.
-                       <br>
-                       <br> Thank you for stopping by and enjoy!
-                    </p>
-                </strong>
-             </div>
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
 
-             <!--About section-->
-             <div class="Row" id="About">
-                 <!--Left column-->
-                 <div class="Column_2>
-                     <img src="images/html_custom.png1">
-                 </div>
-                 <!--Right column-->
-                 <div class="Column_1"> 
-                      <h1>About</h1>
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #768;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #333;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #purple;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: pink;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Mehwish Nayab's portofolio</h1>
+  <p>A website created by mehwish.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">GitHub</a>
+  <a href="#">Contact</a>
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+     <h1>About</h1>
                       <p>
                          I am a software developer who loves to code! As a mother of two, I enjoy time with my family and friends. I love to do travelling. 
                          <br>
                          <br>I am a graduate of <a
-href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
-                         <br>
+href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.   
+   <br>
                          <br>I am a full-stack developer and would love to work with you on your project. 
 <a href="#Contact">Contact</a> me below!
                        </p>
@@ -83,14 +154,12 @@ href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'
                    <!--Right column-->
                    <div class="Column_2">
                        <a href=!https://github.com/mehwishnayab2024" target="_blank">
-img src="GitHub.html">
                    </div>
                  </dive>
 
                  <!--Contact section-->
                  <div class="Row" id="Contact">
-                     <div class="Column_2 Coloumn_tall">
-                         <img src="custom.html" alt="Contact_Image">
+                     <div class="Column_2 Coloumn_tall"
                      </div>
                      <!--Contact form, right column-->
                      <div class="Column_1 Column_talll">
@@ -123,7 +192,3 @@ href="https://www.learncodinganywhere.com/" target="_blank">Mehwish Nayab</a></p
                      
 
                         
-                          
-                         
-                  
-  

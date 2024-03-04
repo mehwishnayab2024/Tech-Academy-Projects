@@ -44,12 +44,6 @@
                        <br> My name is Mehwish Nayab.Welcome to my portfolio website. on it, I will tell you about my background and experience.
                        <br>
                        <br> Thank you for stopping by and enjoy!
-<style>
-p {
-  background-image: url('img_girl.jpg');
-}
-</style>
-
                     </p>
                 </strong>
              </div>
